@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Login</title>
+</head>
+<body>
+    <!--login walpapper background-->
+    <div class="nav" id="nav">
+        <img src="images/Netflix-logo-red-black-png.png" alt="" class="nav_logo">
+         
+    </div>
+    <!--background-->
+    <div class="bg-img">
+    <form action="/action_page.php" class="container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="pwd"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pwd" required>
+    
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+    </div>
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >=50) {
+                nav.classList.add('nav_black')
+            }else{
+                nav.classList.remove('nav_black')
+            }
+        })
+    </script>
+</body>
+</html>
